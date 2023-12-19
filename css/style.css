@@ -1,13 +1,29 @@
 :root {
-    --primario: #9C27B0;
+    --primario: #3C388A;
     --primarioOscuro: #89119D;
     --secundario: #FFCE00;
     --secundarioOscuro: rgb(233, 187, 2);
     --blanco: #FFF;
     --negro: #000;
-
-    --fuentePrincipal: 'Staatliches', cursive;
+    --azul:#3C388A;
 }
+
+@font-face {
+    font-family: "font1";
+    src: url("../typografia/back-to-1982.ttf");
+  }
+@font-face {
+    font-family: "font2";
+    src: url("../typografia/Lazer84.ttf");
+  }
+@font-face {
+    font-family: "font3";
+    src: url("../typografia/nasa-display.ttf");
+  }
+@font-face {
+    font-family: "font4";
+    src: url("../typografia/press-start-2p.ttf");
+  }
 
 html {
     box-sizing: border-box;
@@ -58,10 +74,12 @@ h3 {
 .header {
     display: flex;
     justify-content: center;
+    
 }
 .header__logo {
     margin: 3rem 0;
 }
+
 /** Footer **/
 .footer {
     background-color: var(--primarioOscuro);
