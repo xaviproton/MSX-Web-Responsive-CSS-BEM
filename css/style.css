@@ -1,30 +1,41 @@
 :root {
-    --primario: #3C388A;
-    --primarioOscuro: #89119D;
-    --secundario: #FFCE00;
-    --secundarioOscuro: rgb(233, 187, 2);
-    --blanco: #FFF;
-    --negro: #000;
-    --azul:#3C388A;
+    --negro:#000000;
+    --verde: #21C842;
+    --verde-claro: #5EDC78;
+    --azul-oscuro: #5455ED;
+    --azul-claro: #7D76FC;
+    --rojo-oscuro:#D4524D ;
+    --azul-cielo: #42EBF5;
+    --rojo: #FC5554;
+    --rojo-claro:#FF7978 ;
+    --amarillo-oscuro:#D4C154 ;
+    --amarillo-claro:#E6CE80;
+    --verde-oscuro: #21B03B;
+    --magenta: #C95BBA;
+    --gris: #CCCCCC;
+    
+    
 }
 
 @font-face {
     font-family: "font1";
     src: url("../typografia/back-to-1982.ttf");
   }
+
 @font-face {
     font-family: "font2";
-    src: url("../typografia/Lazer84.ttf");
+    src: url("../typografia/MSX-Screen0.ttf");
   }
+
 @font-face {
     font-family: "font3";
-    src: url("../typografia/nasa-display.ttf");
-  }
-@font-face {
-    font-family: "font4";
     src: url("../typografia/press-start-2p.ttf");
   }
 
+  @font-face {
+    font-family: "font4";
+    src: url("../typografia/MSX-Screen1.ttf");
+  }
 html {
     box-sizing: border-box;
     font-size: 62.5%; 
@@ -36,17 +47,18 @@ html {
 
 /** Globales **/
 body {
-    background-color: var(--primario);
+    background-color: var(--azul-oscuro);
     font-size: 1.6rem;
     line-height: 1.5;
 }
 p {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
+    color: white;
 }
 a {
     text-decoration: none;
+    
 }
 img {
     width: 100%;
@@ -58,7 +70,7 @@ img {
 h1, h2, h3 {
     text-align: center;
     color: var(--secundario);
-    font-family: var(--fuentePrincipal);
+    font-family: font3;
 }
 h1 {
     font-size: 4rem;
@@ -74,7 +86,7 @@ h3 {
 .header {
     display: flex;
     justify-content: center;
-    
+   
 }
 .header__logo {
     margin: 3rem 0;
@@ -82,31 +94,36 @@ h3 {
 
 /** Footer **/
 .footer {
-    background-color: var(--primarioOscuro);
+    background-color: var(--azul-claro);
     padding: 1rem 0;
     margin-top: 2rem;
+    font-family: font4;
 }
 .footer__texto {
     font-family: var(--fuentePrincipal);
     text-align: center;
     font-size: 2.2rem;
+    color: white;
 }
 /** Navegacion **/
 .navegacion {
-    background-color: var(--primarioOscuro);
+    background-color: var(--azul-claro);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
     gap: 2rem; 
+    color: white;
 }
 .navegacion__enlace {
-    font-family: var(--fuentePrincipal);
+    font-family: font2;
     color: var(--blanco);
     font-size: 3rem;
+   
 }
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
     color: var(--secundario);
+    color: #000000;
 }
 
 /** Grid **/
@@ -136,7 +153,7 @@ h3 {
 }
 .producto__nombre,
 .producto__precio {
-    font-family: var(--fuentePrincipal);
+    font-family: font2;
     margin: 1rem 0;
     text-align: center;
     line-height: 1.2;
