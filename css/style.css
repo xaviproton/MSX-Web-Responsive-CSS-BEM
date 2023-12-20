@@ -258,3 +258,14 @@ h3 {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+
+/* Bugs por pantalla */
+
+.bugs{
+    position: absolute;
+    color: white;
+}
+
+#bug1{
+  margin-top: 4rem;
+}
