@@ -1,271 +1,280 @@
 :root {
-    --negro:#000000;
-    --verde: #21C842;
-    --verde-claro: #5EDC78;
-    --azul-oscuro: #5455ED;
-    --azul-claro: #7D76FC;
-    --rojo-oscuro:#D4524D ;
-    --azul-cielo: #42EBF5;
-    --rojo: #FC5554;
-    --rojo-claro:#FF7978 ;
-    --amarillo-oscuro:#D4C154 ;
-    --amarillo-claro:#E6CE80;
-    --verde-oscuro: #21B03B;
-    --magenta: #C95BBA;
-    --gris: #CCCCCC;
-    
-    
+  --negro: #000000;
+  --verde: #21c842;
+  --verde-claro: #5edc78;
+  --azul-oscuro: #5455ed;
+  --azul-claro: #7d76fc;
+  --rojo-oscuro: #d4524d;
+  --azul-cielo: #42ebf5;
+  --rojo: #fc5554;
+  --rojo-claro: #ff7978;
+  --amarillo-oscuro: #d4c154;
+  --amarillo-claro: #e6ce80;
+  --verde-oscuro: #21b03b;
+  --magenta: #c95bba;
+  --gris: #cccccc;
 }
 
 @font-face {
-    font-family: "font1";
-    src: url("../typografia/back-to-1982.ttf");
-  }
+  font-family: "font1";
+  src: url("../typografia/back-to-1982.ttf");
+}
 
 @font-face {
-    font-family: "font2";
-    src: url("../typografia/MSX-Screen0.ttf");
-  }
+  font-family: "font2";
+  src: url("../typografia/MSX-Screen0.ttf");
+}
 
 @font-face {
-    font-family: "font3";
-    src: url("../typografia/press-start-2p.ttf");
-  }
+  font-family: "font3";
+  src: url("../typografia/press-start-2p.ttf");
+}
 
-  @font-face {
-    font-family: "font4";
-    src: url("../typografia/MSX-Screen1.ttf");
-  }
+@font-face {
+  font-family: "font4";
+  src: url("../typografia/MSX-Screen1.ttf");
+}
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; 
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /** Globales **/
 body {
-    background-color: var(--azul-oscuro);
-    font-size: 1.6rem;
-    line-height: 1.5;
+  background-color: var(--azul-oscuro);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 p {
-    font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 a {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 .contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
-h1, h2, h3 {
-    text-align: center;
-    color: var(--secundario);
-    font-family: font3;
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--secundario);
+  font-family: font3;
 }
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 h2 {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 h3 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 /** Header **/
 .header {
-    display: flex;
-    justify-content: center;
-   
+  display: flex;
+  justify-content: center;
 }
 .header__logo {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 /** Footer **/
 .footer {
-    background-color: var(--azul-claro);
-    padding: 1rem 0;
-    margin-top: 2rem;
-    font-family: font4;
+  background-color: var(--azul-claro);
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-family: font4;
 }
 .footer__texto {
-    font-family: var(--fuentePrincipal);
-    text-align: center;
-    font-size: 2.2rem;
-    color: white;
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  font-size: 2.2rem;
+  color: white;
 }
 /** Navegacion **/
 .navegacion {
-    background-color: var(--azul-claro);
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem; 
-    color: white;
+  background-color: var(--azul-claro);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
 }
 .navegacion__enlace {
-    font-family: font2;
-    color: var(--blanco);
-    font-size: 3rem;
-   
+  font-family: font2;
+  color: var(--blanco);
+  font-size: 3rem;
 }
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
-    color: var(--secundario);
-    color: #000000;
+  color: var(--secundario);
+  color: #000000;
 }
 
 /** Grid **/
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 @media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /** Productos **/
 .producto {
-    background-color: var(--primarioOscuro);
-    padding: 1rem;
+  background-color: var(--primarioOscuro);
+  padding: 1rem;
 }
 
 .producto__nombre {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 .producto__precio {
-    font-size: 2.8rem;
-    color: var(--magenta);
+  font-size: 2.8rem;
+  color: var(--magenta);
 }
 .producto__nombre,
 .producto__precio {
-    font-family: font2;
-    margin: 1rem 0;
-    text-align: center;
-    line-height: 1.2;
+  font-family: font2;
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
 }
 
 /** Graficos **/
 .grafico {
-    min-height: 30rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-column: 1 / 3;
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column: 1 / 3;
 }
 .grafico--camisas {
-    grid-row: 2 / 3;
-    background-image: url(../img/exitos8688.jpg);
+  grid-row: 2 / 3;
+  background-image: url(../img/exitos8688.jpg);
 }
 .grafico--node {
-    background-image: url(../img/mymsx.jpg);
-    grid-row: 8 / 9;
+  background-image: url(../img/mymsx.jpg);
+  grid-row: 8 / 9;
 }
 
 @media (min-width: 768px) {
-    .grafico--node {
-        grid-row: 5 / 6;
-        grid-column: 2 / 4;
-    }
+  .grafico--node {
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+  }
 }
 
 /** Nosotros **/
 .nosotros {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
+  display: grid;
+  grid-template-rows: repeat(2, auto);
 }
 @media (min-width: 768px) {
-    .nosotros {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
+  .nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 .nosotros__imagen {
-    grid-row: 1 / 2;
+  grid-row: 1 / 2;
 }
 @media (min-width: 768px) {
-    .nosotros__imagen {
-       grid-column: 2 / 3;
-    }
+  .nosotros__imagen {
+    grid-column: 2 / 3;
+  }
 }
 
 /** Bloques **/
 .bloques {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 @media (min-width: 768px) {
-    .bloques {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .bloques {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .bloque {
-    text-align: center;
+  text-align: center;
 }
 
 .bloque__titulo {
-    margin: 0;
+  margin: 0;
 }
 
 /** Pagina del Producto **/
 @media (min-width: 768px) {
-    .camisa {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
+  .camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 .formulario {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 .formulario__campo {
-   border: 1rem solid var(--primarioOscuro);
-   background-color: transparent;
-   color: var(--blanco);
-   font-size: 2rem;
-   font-family: Arial, Helvetica, sans-serif;
-   padding: 1rem;
-   appearance: none;
+  border: 1rem solid var(--primarioOscuro);
+  background-color: transparent;
+  color: var(--blanco);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
 }
 .formulario__submit {
-    background-color: var(--secundario);
-    border: none;
-    font-size: 2rem;
-    font-family: var(--fuentePrincipal);
-    padding: 2rem;
-    transition: background-color .3s ease;
-    grid-column: 1 / 3;
+  background-color: var(--secundario);
+  border: none;
+  font-size: 2rem;
+  font-family: var(--fuentePrincipal);
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+  grid-column: 1 / 3;
 }
 .formulario__submit:hover {
-    cursor: pointer;
-    background-color: var(--secundarioOscuro);
+  cursor: pointer;
+  background-color: var(--secundarioOscuro);
 }
 
 /* Bugs por pantalla */
 
-.bugs{
-    position: absolute;
-    color: white;
+.bugs {
+  position: absolute;
+  color: white;
 }
 
-#bug1{
+#bug1 {
   margin-top: 4rem;
+}
+
+.kaz {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 48rem;
+  right: 35rem;
+  font-family: font2;
+  font-size: 12px;
 }
