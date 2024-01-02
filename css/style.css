@@ -149,7 +149,7 @@ h3 {
 }
 .producto__precio {
     font-size: 2.8rem;
-    color: var(--secundario);
+    color: var(--magenta);
 }
 .producto__nombre,
 .producto__precio {
@@ -163,7 +163,7 @@ h3 {
 .grafico {
     min-height: 30rem;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     grid-column: 1 / 3;
 }
 .grafico--camisas {
@@ -171,7 +171,7 @@ h3 {
     background-image: url(../img/exitos8688.jpg);
 }
 .grafico--node {
-    background-image: url(../img/grafico2.jpg);
+    background-image: url(../img/mymsx.jpg);
     grid-row: 8 / 9;
 }
 
