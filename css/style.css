@@ -257,3 +257,9 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+
+.myvideo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
