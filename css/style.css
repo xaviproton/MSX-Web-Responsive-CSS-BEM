@@ -2,6 +2,7 @@
   --negro: #000000;
   --verde: #21c842;
   --verde-claro: #5edc78;
+  --azul-MSX:#0101FF;
   --azul-oscuro: #5455ed;
   --azul-claro: #7d76fc;
   --rojo-oscuro: #d4524d;
@@ -34,6 +35,7 @@
   font-family: "font4";
   src: url("../typografia/MSX-Screen1.ttf");
 }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -47,13 +49,13 @@ html {
 
 /** Globales **/
 body {
-  background-color: var(--azul-oscuro);
+  background-color: var(--azul-MSX);
   font-size: 1.6rem;
   line-height: 1.5;
 }
 p {
   font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: font4;
   color: white;
 }
 a {
@@ -70,7 +72,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  color: var(--secundario);
+  color: var(--gris);
   font-family: font3;
 }
 h1 {
@@ -100,7 +102,7 @@ h3 {
   font-family: font4;
 }
 .footer__texto {
-  font-family: var(--fuentePrincipal);
+  font-family: var(--gris);
   text-align: center;
   font-size: 2.2rem;
   color: white;
@@ -118,11 +120,20 @@ h3 {
   font-family: font2;
   color: var(--blanco);
   font-size: 3rem;
+ padding: 1rem ;
 }
-.navegacion__enlace--activo,
-.navegacion__enlace:hover {
-  color: var(--secundario);
-  color: #000000;
+
+.navegacion__enlace:hover{
+  color: var(--negro);
+}
+
+.navegacion__enlace.current-page-item {
+  color: var(--negro);
+  font-weight: bold;
+  box-shadow: 10px 0 50px 5px rgba(0, 0, 0, 0.5),
+  0 0 10px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  background-color: var(--azul-claro);
 }
 
 /** Grid **/
@@ -231,25 +242,15 @@ h3 {
 }
 
 
-/* Bugs por pantalla */
 
-.bugs {
-  position: absolute;
-  color: white;
-}
-
-#bug1 {
-  margin-top: 4rem;
-}
 
 .kaz {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 48rem;
-  right: 35rem;
+  text-align: right;
   font-family: font2;
-  font-size: 12px;
+  font-size: 18px;
+  color: white;
 }
 
 .cuadro{
@@ -262,4 +263,27 @@ h3 {
     display: flex;
     align-items: center;
     justify-content:center;
+}
+
+.imagenInicio{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.imagenInicio img{
+  width: 110rem;
+  margin: 2rem;
+}
+
+.box_texto__central{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.texto__central{
+  width: 58%;
+  margin-top: 2rem;
+ 
 }
